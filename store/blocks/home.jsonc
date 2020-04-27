@@ -1,0 +1,86 @@
+{
+  "store.home": {
+    "blocks": [
+      "flex-layout.row",
+      "flex-layout.row#produtos",
+      "shelf"
+    ]
+  },
+  "flex-layout.row": {
+    "children": [
+      "image#banner1",
+      "image#banner2",
+      "image#banner3",
+      "image#banner4"
+    ]
+  },
+  "image#banner1": {
+    "props": {
+      "src": "https://estacaodamodastore.vteximg.com.br/arquivos/ids/193307/Dia-das-Maes-Estacao-Store-2020.jpg?v=637232381992630000",
+      "srcset": "https://estacaodamodastore.vteximg.com.br/arquivos/ids/192985-331-440/Blazer-Maxi-Barcelona-Vermelho02-1-.jpg?v=637220500942230000",
+      "link": "#",
+      "alt": "Estacao Store - 2020",
+      "maxHeight": 550,
+      "maxWidth": 330
+    }
+  },
+  "image#banner2": {
+    "props": {
+      "src": "https://estacaodamodastore.vteximg.com.br/arquivos/ids/193308/O-Presente-Perfeito-Estacao-Store-2020.jpg?v=637232383115000000",
+      "link": "#",
+      "alt": "Estacao Store - 2020",
+      "maxHeight": 550,
+      "maxWidth": 330
+    }
+  },
+  "image#banner3": {
+    "props": {
+      "src": "https://estacaodamodastore.vteximg.com.br/arquivos/ids/193309/Para-Alguem-Muito-Especial-Maes-Estacao-Store-2020.jpg?v=637232385596630000",
+      "link": "#",
+      "alt": "Estacao Store - 2020",
+      "maxHeight": 550,
+      "maxWidth": 330
+    }
+  },
+  "image#banner4": {
+    "props": {
+      "src": "https://estacaodamodastore.vteximg.com.br/arquivos/ids/193310/Dia-Das-Maes-Aline-Mezzari-Brand-2020.jpg?v=637232451557430000",
+      "link": "#",
+      "alt": "Estacao Store - 2020",
+      "maxHeight": 550,
+      "maxWidth": 330
+    }
+  },
+  "flex-layout.row#produtos":{
+    "children":[
+      "info-card#bannerhome"
+    ]
+  },
+  "info-card#bannerhome":{
+    "props": {
+      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/utensilios-cozinha-min.png",
+      "isFullModeStyle": true,
+      "headline": "Time to rethink your kitchen",
+      "callToActionText": "Discover",
+      "textPosition": "center"
+    }
+  },
+  "shelf": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "props": {
+      "category": "100031/100016",
+      "orderBy": "OrderByReleaseDateDESC",
+      "paginationDotsVisibility": "desktopOnly",
+      "productList": {
+        "maxItems": 15,
+        "itemsPerPage": 5,
+        "minItemsPerPage": 1,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "Novidades"
+      }
+    }
+  }
+}
