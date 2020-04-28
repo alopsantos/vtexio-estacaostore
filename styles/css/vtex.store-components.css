@@ -1,0 +1,13 @@
+.sellingPrice .sellingPriceValue{
+    font-weight: 300 !important;
+    color: #ef1c8f !important;
+}
+.installmentsPrice{
+    font-size: 0.8rem;
+}
+.discountInsideContainer{
+    width: 70px;
+    height: 30px;
+    border-radius: 0 0 0 10px;
+    font-size: 18px;
+}

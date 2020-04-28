@@ -1,0 +1,15 @@
+.nameContainer .brandName{
+    text-transform: uppercase !important;
+    font-weight: 500; 
+    font-size: 0.9rem;   
+    color: #5a5a5c;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+}
+.clearLink{    
+    vertical-align: top;
+}
+.image{
+    max-height: 25rem !important;
+}

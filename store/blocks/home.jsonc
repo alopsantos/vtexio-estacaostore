@@ -2,7 +2,8 @@
   "store.home": {
     "blocks": [
       "flex-layout.row",
-      "shelf"
+      "shelf#novidades",
+      "shelf#promocoes"
     ]
   },
   "flex-layout.row": {
@@ -72,7 +73,7 @@
       "textPosition": "center"
     }
   },
-  "shelf": {
+  "shelf#novidades": {
     "blocks": [
       "product-summary.shelf"
     ],
@@ -86,7 +87,25 @@
         "minItemsPerPage": 1,
         "scroll": "BY_PAGE",
         "arrows": true,
-        "titleText": "Novidades"
+        "titleText": ""
+      }
+    }
+  },
+  "shelf#promocoes": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "props": {
+      "category": "100031/100018",
+      "orderBy": "OrderByReleaseDateDESC",
+      "paginationDotsVisibility": "desktopOnly",
+      "productList": {
+        "maxItems": 15,
+        "itemsPerPage": 5,
+        "minItemsPerPage": 1,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": ""
       }
     }
   }
