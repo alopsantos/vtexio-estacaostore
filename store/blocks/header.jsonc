@@ -1,9 +1,15 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header-layout.desktop": {
     "children": [
@@ -14,7 +20,10 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#desktop"]
+    "children": [
+      "flex-layout.row#desktop",
+      "flex-layout.row#menu"
+    ]
   },
   "flex-layout.row#desktop": {
     "props": {
@@ -42,7 +51,9 @@
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["logo"]
+    "children": [
+      "logo"
+    ]
   },
   "logo": {
     "props": {
@@ -52,11 +63,45 @@
       "width": "280"
     }
   },
+  "flex-layout.row#menu": {
+    "children": [
+      "logo#novidades",
+      "logo#promocoes",
+      "logo#vestidos"
+    ]
+  },
+  "logo#novidades": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://www.estacaodamodastore.com.br/arquivos/linkedin-icone.svg"
+    }
+  },
+  "logo#promocoes": {
+    "props": {
+      "text": "Promocoes",
+      "title": "Logo",
+      "href": "/",
+      "url": "https://www.estacaodamodastore.com.br/arquivos/linkedin-icone.svg"
+    }
+  },
+  "logo#vestidos": {
+    "props": {
+      "showLabel": true,
+      "title": "Vestidos",
+      "href": "/",
+      "url": "https://www.estacaodamodastore.com.br/arquivos/linkedin-icone.svg"
+    }
+  },
   "header-layout.mobile": {
-    "children": ["sticky-layout#mobile"]
+    "children": [
+      "sticky-layout#mobile"
+    ]
   },
   "sticky-layout#mobile": {
-    "children": ["flex-layout.row#mobile"]
+    "children": [
+      "flex-layout.row#mobile"
+    ]
   },
   "flex-layout.row#mobile": {
     "children": [
@@ -74,7 +119,9 @@
     }
   },
   "drawer": {
-    "children": ["logo#drawer"]
+    "children": [
+      "logo#drawer"
+    ]
   },
   "logo#drawer": {
     "props": {
