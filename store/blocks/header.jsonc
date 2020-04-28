@@ -48,8 +48,8 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
-      "width": "80"
+      "url": "https://www.estacaodamodastore.com.br/arquivos/logo.svg",
+      "width": "280"
     }
   },
   "header-layout.mobile": {
@@ -74,6 +74,14 @@
     }
   },
   "drawer": {
-    "children": []
+    "children": ["logo#drawer"]
+  },
+  "logo#drawer": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://www.estacaodamodastore.com.br/arquivos/logo.svg",
+      "width": "280"
+    }
   }
 }

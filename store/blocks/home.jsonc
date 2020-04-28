@@ -2,15 +2,34 @@
   "store.home": {
     "blocks": [
       "flex-layout.row",
-      "flex-layout.row#produtos",
       "shelf"
     ]
   },
   "flex-layout.row": {
     "children": [
-      "image#banner1",
-      "image#banner2",
-      "image#banner3",
+      "flex-layout.col#banner1",
+      "flex-layout.col#banner2",
+      "flex-layout.col#banner3",
+      "flex-layout.col#banner4"
+    ]
+  },
+  "flex-layout.col#banner1":{
+    "children": [
+      "image#banner1"
+    ]
+  },
+  "flex-layout.col#banner2":{
+    "children": [
+      "image#banner2"
+    ]
+  },
+  "flex-layout.col#banner3":{
+    "children": [
+      "image#banner3"
+    ]
+  },
+  "flex-layout.col#banner4":{
+    "children": [
       "image#banner4"
     ]
   },
@@ -20,41 +39,29 @@
       "srcset": "https://estacaodamodastore.vteximg.com.br/arquivos/ids/192985-331-440/Blazer-Maxi-Barcelona-Vermelho02-1-.jpg?v=637220500942230000",
       "link": "#",
       "alt": "Estacao Store - 2020",
-      "maxHeight": 550,
-      "maxWidth": 330
+      "blockClass": "bannerhome"
     }
   },
   "image#banner2": {
     "props": {
       "src": "https://estacaodamodastore.vteximg.com.br/arquivos/ids/193308/O-Presente-Perfeito-Estacao-Store-2020.jpg?v=637232383115000000",
       "link": "#",
-      "alt": "Estacao Store - 2020",
-      "maxHeight": 550,
-      "maxWidth": 330
+      "alt": "Estacao Store - 2020"
     }
   },
   "image#banner3": {
     "props": {
       "src": "https://estacaodamodastore.vteximg.com.br/arquivos/ids/193309/Para-Alguem-Muito-Especial-Maes-Estacao-Store-2020.jpg?v=637232385596630000",
       "link": "#",
-      "alt": "Estacao Store - 2020",
-      "maxHeight": 550,
-      "maxWidth": 330
+      "alt": "Estacao Store - 2020"
     }
   },
   "image#banner4": {
     "props": {
       "src": "https://estacaodamodastore.vteximg.com.br/arquivos/ids/193310/Dia-Das-Maes-Aline-Mezzari-Brand-2020.jpg?v=637232451557430000",
       "link": "#",
-      "alt": "Estacao Store - 2020",
-      "maxHeight": 550,
-      "maxWidth": 330
+      "alt": "Estacao Store - 2020"
     }
-  },
-  "flex-layout.row#produtos":{
-    "children":[
-      "info-card#bannerhome"
-    ]
   },
   "info-card#bannerhome":{
     "props": {
