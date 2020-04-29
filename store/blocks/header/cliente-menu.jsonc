@@ -1,0 +1,60 @@
+{
+    "vtex.menu@2.x:menu#cliente-menu":{
+        "children":[
+            "menu-item#telefone",
+            "menu-item#desejos",
+            "menu-item#pedidos"
+        ]
+    },
+    "menu-item#telefone":{
+        "props": {
+            "id": "menu-item-telefone",
+            "type": "custom",
+            "iconProps": {
+                "id": "hpa-telemarketing",
+                "size": 16,
+                "viewBox": "0 0 16 16",
+                "activeClassName": "rebel-pink",
+                "mutedClassName": "c-action-primary"
+              },
+            "highlight": false,
+            "itemProps":{
+                "type": "external",
+                "href": "http://api.whatsapp.com/send?1=pt_BR&phone=554535412940",
+                "noFollow": true,
+                "tagTitle": "(45)3541-2940",
+                "text": "(45)3541-2940"
+            }
+        }
+    },
+    "menu-item#desejos":{
+        "props": {
+            "id": "menu-item-telefone",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps":{
+                "type": "internal",
+                "href": "/meus-desejos",
+                "noFollow": true,
+                "tagTitle": "Meus desejos",
+                "text": "Meus desejos"
+            }
+        }
+    },
+    "menu-item#pedidos":{
+        "props": {
+            "id": "menu-item-pedidos",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps":{
+                "type": "internal",
+                "href": "/meus-pedidos",
+                "noFollow": true,
+                "tagTitle": "Pedidos",
+                "text": "Pedidos"
+            }
+        }
+    }
+}

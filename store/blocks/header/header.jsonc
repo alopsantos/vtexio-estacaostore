@@ -199,9 +199,7 @@
       "flex-layout.col#logo-desktop-full",
       "search-bar",
       "flex-layout.col#spacer",
-      "rich-text#contato",
-      "rich-text#desejos",
-      "info-card#pedidos",
+      "vtex.menu@2.x:menu#cliente-menu",
       "login",
       "minicart.v2"
     ]
@@ -245,15 +243,16 @@
   },
   "info-card#pedidos":{
     "props": {
-      "id": "info-card-example",
+      "id": "infocardHeader",
       "isFullModeStyle": false,
       "textPosition": "right",
       "imageUrl": "https://estacaodamodastore.vteximg.com.br/arquivos/facebook.svg",
       "callToActionMode": "link",
-      "subhead": "Meus desejos",
+      "headline": "  ",
+      "subhead": "Pedidos",
       "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-example",
-      "textAlignment": "center"
+      "blockClass": "infocardHeader",
+      "textAlignment": "top"
     }
   },
   "flex-layout.row#menu-full": {

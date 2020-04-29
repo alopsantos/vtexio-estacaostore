@@ -21,3 +21,6 @@
 .searchIcon--searchBarHeader{
     color: #ef1c8f;
 }
+.infoCardContainer--infocardHeader{
+    align-items: center;
+}
