@@ -15,3 +15,9 @@
 .logoLink{
     width: 50px;
 }
+.searchBarContainer {
+    min-width: 400px;
+}
+.searchIcon--searchBarHeader{
+    color: #ef1c8f;
+}

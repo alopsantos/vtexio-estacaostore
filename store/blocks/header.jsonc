@@ -7,8 +7,7 @@
   },
   "header.full": {
     "blocks": [
-      "header-layout.desktop",
-      "header-layout.mobile"
+      "header-layout.desktop#full"
     ]
   },
   "header-layout.desktop": {
@@ -37,7 +36,6 @@
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
       "search-bar",
-      "locale-switcher",
       "login",
       "minicart.v2"
     ]
@@ -59,8 +57,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://www.estacaodamodastore.com.br/arquivos/logo.svg",
-      "width": "280"
+      "url": "https://www.estacaodamodastore.com.br/arquivos/logo.svg"
     }
   },
   "flex-layout.row#menu": {
@@ -130,5 +127,138 @@
       "url": "https://www.estacaodamodastore.com.br/arquivos/logo.svg",
       "width": "280"
     }
+  },
+  "header-layout.desktop#full": {
+    "children": [
+      "sticky-layout#desktop-full"
+    ]
+  },
+  "sticky-layout#desktop-full": {
+    "props": {
+      "blockClass": "sticky-header-full"
+    },
+    "children": [
+      "header-row#notification-full",
+      "flex-layout.row#desktop-full",
+      "flex-layout.row#menu-full"
+    ]
+  },
+  "header-row#notification-full": {
+    "children": [
+      "header-spacer",
+      "rich-text#header1",
+      "header-spacer",
+      "rich-text#header2",
+      "header-spacer",
+      "rich-text#header3",
+      "header-spacer",
+      "rich-text#header4",
+      "header-spacer"
+    ],
+    "props": {
+      "blockClass": "notificacaoBar"
+    }
+  },
+  "rich-text#header1": {
+    "props": {
+      "text": "Compras em ambiente 100% seguro",
+      "textPosition": "",
+      "blockClass": "notificacaoBarTexto"
+    }
+  },
+  "rich-text#header2": {
+    "props": {
+      "text": "Marque nosso instagram nas fotos do seu look!",
+      "textPosition": "",
+      "blockClass": "notificacaoBarTexto"
+    }
+  },
+  "rich-text#header3": {
+    "props": {
+      "text": "Entregamos para todo o território brasilleiro",
+      "textPosition": "",
+      "blockClass": "notificacaoBarTexto"
+    }
+  },
+  "rich-text#header4": {
+    "props": {
+      "text": "Tire suas dúvidas, fale conosco no chat",
+      "textPosition": "",
+      "blockClass": "notificacaoBarTexto"
+    }
+  },
+  "flex-layout.row#desktop-full": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop-full",
+      "search-bar",
+      "flex-layout.col#spacer",
+      "rich-text#contato",
+      "rich-text#desejos",
+      "info-card#pedidos",
+      "login",
+      "minicart.v2"
+    ]
+  },
+  "flex-layout.col#logo-desktop-full": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "logo"
+    ]
+  },
+  "search-bar": {
+    "props": {
+      "DisplayMode": "search-and-clear-buttons",
+      "placeholder": "Busque por Blusa, Vestido, Shorts",
+      "maxWidth": "346",
+      "blockClass": "searchBarHeader"
+    }
+  },
+  "rich-text#contato": {
+    "props": {
+      "text": "(45)3541-2940",
+      "textPosition": "",
+      "blockClass": "textLogo"
+    }
+  },
+  "rich-text#desejos": {
+    "props": {
+      "text": "Meus Desejos",
+      "textPosition": "",
+      "blockClass": "textLogo"
+    }
+  },
+  "rich-text#pedidos": {
+    "props": {
+      "text": "Pedidos",
+      "textPosition": "",
+      "blockClass": "textLogo"
+    }
+  },
+  "info-card#pedidos":{
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://estacaodamodastore.vteximg.com.br/arquivos/facebook.svg",
+      "callToActionMode": "link",
+      "subhead": "Meus desejos",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+  "flex-layout.row#menu-full": {
+    "children": [
+      "logo#novidades"
+    ]
   }
 }

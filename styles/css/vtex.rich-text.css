@@ -1,0 +1,8 @@
+.paragraph--notificacaoBarTexto{
+    color:#A1A1A1;
+    vertical-align: middle;
+    transition: all .2s ease;
+}
+.container--textLogo{
+    margin-left: 30px;
+}

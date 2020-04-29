@@ -4,9 +4,50 @@
   },
   "footer-layout.desktop": { 
     "children": [
-      "flex-layout.row#footer"
+      "flex-layout.row#footer-1-desktop"
     ]
   },
+  "flex-layout.row#footer-1-desktop":{
+    "children":[
+      "flex-layout.col#footer-left-desktop",
+      "flex-layout.col#footer-right-desktop"
+    ],
+    "props":{
+      "blockClass": "footer-row",
+      "paddingTop": 7,
+      "paddingBottom": 7
+    }
+  },
+  "flex-layout.col#footer-left-desktop":{
+    "children":[
+      "accepted-payment-methods"
+    ]
+  },
+  "accepted-payment-methods":{
+    "props":{
+      "paymentMethods":["mastercard", "visa", "dines club"],
+      "showInColor": true
+    }
+  },
+  "flex-layout.col#footer-right-desktop":{
+    "children":["social-networks"]
+  },
+  "social-networks":{
+    "props":{
+      "socialNetworks":[
+        {
+          "url": "#",
+          "name": "Instagram"
+        },
+        {
+          "url": "#",
+          "name": "Facebook"
+        }
+      ],
+      "showInColor":true
+    }
+  },
+
   "footer-layout.mobile": { 
     "children": [
       "flex-layout.row#footer"
@@ -20,7 +61,7 @@
   "image": {
     "props": {
       "width": 100,
-      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+      "src": "https://www.estacaodamodastore.com.br/arquivos/logo.svg"
     }
   }
 }

@@ -3,34 +3,16 @@
     "blocks": [
       "flex-layout.row",
       "shelf#novidades",
-      "shelf#promocoes"
+      "shelf#promocoes",
+      "newsletter",
+      "flex-layout.row#social"
     ]
   },
   "flex-layout.row": {
     "children": [
-      "flex-layout.col#banner1",
-      "flex-layout.col#banner2",
-      "flex-layout.col#banner3",
-      "flex-layout.col#banner4"
-    ]
-  },
-  "flex-layout.col#banner1":{
-    "children": [
-      "image#banner1"
-    ]
-  },
-  "flex-layout.col#banner2":{
-    "children": [
-      "image#banner2"
-    ]
-  },
-  "flex-layout.col#banner3":{
-    "children": [
-      "image#banner3"
-    ]
-  },
-  "flex-layout.col#banner4":{
-    "children": [
+      "image#banner1",
+      "image#banner2",
+      "image#banner3",
       "image#banner4"
     ]
   },
@@ -64,13 +46,49 @@
       "alt": "Estacao Store - 2020"
     }
   },
-  "info-card#bannerhome":{
+  "info-card#bannerhome": {
     "props": {
       "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/utensilios-cozinha-min.png",
       "isFullModeStyle": true,
       "headline": "Time to rethink your kitchen",
       "callToActionText": "Discover",
       "textPosition": "center"
+    }
+  },
+  "flex-layout.row#social": {
+    "children": [
+      "image#facebook",
+      "image#instagram",
+      "image#pinterst",
+      "image#atacado"
+    ]
+  },
+  "image#facebook": {
+    "props": {
+      "src": "https://estacaodamodastore.vteximg.com.br/arquivos/ids/169749/facebook.jpg?v=636806490850700000",
+      "link": "#",
+      "alt": "Estacao Store - 2020"
+    }
+  },
+  "image#instagram": {
+    "props": {
+      "src": "https://estacaodamodastore.vteximg.com.br/arquivos/ids/169750/instagram.jpg?v=636806491198200000",
+      "link": "#",
+      "alt": "Estacao Store - 2020"
+    }
+  },
+  "image#pinterst": {
+    "props": {
+      "src": "https://estacaodamodastore.vteximg.com.br/arquivos/ids/169751/pinterest.jpg?v=636806491470200000",
+      "link": "#",
+      "alt": "Estacao Store - 2020"
+    }
+  },
+  "image#atacado": {
+    "props": {
+      "src": "https://estacaodamodastore.vteximg.com.br/arquivos/ids/169752/atacado.jpg?v=636806491683200000",
+      "link": "#",
+      "alt": "Estacao Store - 2020"
     }
   }
 }
