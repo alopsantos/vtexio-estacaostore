@@ -1,12 +1,12 @@
 {
-    "vtex.menu@2.x:menu#cliente-menu":{
-        "children":[
+    "vtex.menu@2.x:menu#cliente-menu": {
+        "children": [
             "menu-item#telefone",
             "menu-item#desejos",
             "menu-item#pedidos"
         ]
     },
-    "menu-item#telefone":{
+    "menu-item#telefone": {
         "props": {
             "id": "menu-item-telefone",
             "type": "custom",
@@ -16,9 +16,9 @@
                 "viewBox": "0 0 16 16",
                 "activeClassName": "rebel-pink",
                 "mutedClassName": "c-action-primary"
-              },
+            },
             "highlight": false,
-            "itemProps":{
+            "itemProps": {
                 "type": "external",
                 "href": "http://api.whatsapp.com/send?1=pt_BR&phone=554535412940",
                 "noFollow": true,
@@ -27,13 +27,20 @@
             }
         }
     },
-    "menu-item#desejos":{
+    "menu-item#desejos": {
         "props": {
             "id": "menu-item-telefone",
             "type": "custom",
-            "iconId": null,
+            "iconProps": {
+                "id": "mpa-heart",
+                "size": 16,
+                "viewBox": "0 0 16 16",
+                "activeClassName": "rebel-pink",
+                "mutedClassName": "c-action-primary"
+            },
+            "blockClass": "iconedesejos",
             "highlight": false,
-            "itemProps":{
+            "itemProps": {
                 "type": "internal",
                 "href": "/meus-desejos",
                 "noFollow": true,
@@ -42,13 +49,13 @@
             }
         }
     },
-    "menu-item#pedidos":{
+    "menu-item#pedidos": {
         "props": {
             "id": "menu-item-pedidos",
             "type": "custom",
             "iconId": null,
             "highlight": false,
-            "itemProps":{
+            "itemProps": {
                 "type": "internal",
                 "href": "/meus-pedidos",
                 "noFollow": true,
