@@ -5,3 +5,9 @@
     text-align: center;
     display: block;
 }
+.styledLinkContent--menu-categoria-icone{
+    display: block !important;
+}
+.styledLinkIcon--menu-categoria-icone .activeClassName{
+    display: block;
+}
