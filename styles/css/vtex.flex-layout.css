@@ -1,6 +1,9 @@
+.flexRow--als-menu-full-header{
+    background-color: #ffffff;
+}
+
 .flexRowContent{
     background-color: white;
-    margin-bottom: 10px;
     align-items: center;
 }
 .flexRow .main-header-mobile{

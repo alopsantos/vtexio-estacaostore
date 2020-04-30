@@ -11,12 +11,13 @@
             "id": "menu-item-telefone",
             "type": "custom",
             "iconProps": {
-                "id": "hpa-telemarketing",
+                "id": "als-telefone",
                 "size": 16,
-                "viewBox": "0 0 16 16",
+                "viewBox": "0 0 18 18",
                 "activeClassName": "rebel-pink",
                 "mutedClassName": "c-action-primary"
             },
+            "blockClass": "menu-header-icone",
             "highlight": false,
             "itemProps": {
                 "type": "external",
@@ -45,15 +46,22 @@
                 "href": "/meus-desejos",
                 "noFollow": true,
                 "tagTitle": "Meus desejos",
-                "text": "Meus desejos"
-            }
+                "text": "Meus desejos",
+                "activeClassName": "rebel-pink",
+                "mutedClassName": "c-action-primary"            }
         }
     },
     "menu-item#pedidos": {
         "props": {
             "id": "menu-item-pedidos",
             "type": "custom",
-            "iconId": null,
+            "iconProps": {
+                "id": "als-pedidos-location",
+                "size": 16,
+                "viewBox": "0 0 16 16",
+                "activeClassName": "rebel-pink",
+                "mutedClassName": "c-action-primary"
+            },
             "highlight": false,
             "itemProps": {
                 "type": "internal",

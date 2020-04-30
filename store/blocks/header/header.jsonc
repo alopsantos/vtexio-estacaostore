@@ -67,13 +67,6 @@
       "logo#vestidos"
     ]
   },
-  "logo#novidades": {
-    "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "https://www.estacaodamodastore.com.br/arquivos/linkedin-icone.svg"
-    }
-  },
   "logo#promocoes": {
     "props": {
       "text": "Promocoes",
@@ -241,23 +234,20 @@
       "blockClass": "textLogo"
     }
   },
-  "info-card#pedidos":{
-    "props": {
-      "id": "infocardHeader",
-      "isFullModeStyle": false,
-      "textPosition": "right",
-      "imageUrl": "https://estacaodamodastore.vteximg.com.br/arquivos/facebook.svg",
-      "callToActionMode": "link",
-      "headline": "  ",
-      "subhead": "Pedidos",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "infocardHeader",
-      "textAlignment": "top"
-    }
-  },
   "flex-layout.row#menu-full": {
     "children": [
-      "logo#novidades"
-    ]
+      "vtex.menu@2.x:menu#categorias-menu"
+    ],
+    "props": {
+      "blockClass": "als-menu-full-header"
+    }
+    
+  },
+  "logo#novidades": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "/public/vestido.svg"
+    }
   }
 }
