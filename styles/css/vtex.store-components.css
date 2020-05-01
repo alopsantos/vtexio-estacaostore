@@ -24,3 +24,10 @@
 .infoCardContainer--infocardHeader{
     align-items: center;
 }
+.imageElementLink--bannerhome{
+    padding: 5px;
+}
+.imageElementLink--bannerhome:hover{
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+}

@@ -3,7 +3,23 @@
         "children": [
             "menu-item#novidades",
             "menu-item#promocoes",
-            "menu-item#vestidos"
+            "menu-item#vestidos",
+            "menu-item#blusas",
+            "menu-item#tshirts",
+            "menu-item#camisas",
+            "menu-item#cropped",
+            "menu-item#body",
+            "menu-item#shorts",
+            "menu-item#sais",
+            "menu-item#calcas",
+            "menu-item#blazer",
+            "menu-item#conjunto",
+            "menu-item#macacao",
+            "menu-item#moletom",
+            "menu-item#jaqueta",
+            "menu-item#casaco",
+            "menu-item#tricot",
+            "menu-item#acessorios"
         ]
     },
     "menu-item#novidades": {
@@ -16,9 +32,9 @@
                 "text": "NOVIDADES"
             },
             "iconProps": {
-                "id": "als-novidades-star",
+                "id": "als-icon-novidades-star",
                 "size": 32,
-                "viewBox": "0 0 16 16",
+                "viewBox": "0 0 14 20",
                 "activeClassName": "rebel-pink",
                 "mutedClassName": "c-action-primary"
             }
@@ -34,9 +50,9 @@
                 "text": "PROMOÇÕES"
             },
             "iconProps": {
-                "id": "als-promocoes",
+                "id": "als-icon-promocoes",
                 "size": 32,
-                "viewBox": "0 0 16 16",
+                "viewBox": "0 0 16 20",
                 "activeClassName": "rebel-pink",
                 "mutedClassName": "c-action-primary"
             }
@@ -52,9 +68,297 @@
                 "text": "VESTIDOS"
             },
             "iconProps": {
-                "id": "als-vestido",
+                "id": "als-icon-vestido",
                 "size": 32,
-                "viewBox": "0 0 16 16",
+                "viewBox": "0 0 14 20",
+                "activeClassName": "rebel-pink",
+                "mutedClassName": "c-action-primary"
+            }
+        }
+    },
+    "menu-item#blusas": {
+        "props": {
+            "type": "category",
+            "highlight": true,
+            "blockClass": "menu-categoria-icone",
+            "itemProps": {
+                "categoryId": 100016,
+                "text": "BLUSAS"
+            },
+            "iconProps": {
+                "id": "als-icon-blusas",
+                "size": 32,
+                "viewBox": "0 0 16 20",
+                "activeClassName": "rebel-pink",
+                "mutedClassName": "c-action-primary"
+            }
+        }
+    },
+    "menu-item#tshirts": {
+        "props": {
+            "type": "category",
+            "highlight": true,
+            "blockClass": "menu-categoria-icone",
+            "itemProps": {
+                "categoryId": 100016,
+                "text": "T-SHIRTS"
+            },
+            "iconProps": {
+                "id": "als-icon-tshirts",
+                "size": 32,
+                "viewBox": "0 0 20 20",
+                "activeClassName": "rebel-pink",
+                "mutedClassName": "c-action-primary"
+            }
+        }
+    },
+    "menu-item#camisas": {
+        "props": {
+            "type": "category",
+            "highlight": true,
+            "blockClass": "menu-categoria-icone",
+            "itemProps": {
+                "categoryId": 100016,
+                "text": "CAMISAS"
+            },
+            "iconProps": {
+                "id": "als-icon-camisas",
+                "size": 32,
+                "viewBox": "0 0 20 20",
+                "activeClassName": "rebel-pink",
+                "mutedClassName": "c-action-primary"
+            }
+        }
+    },
+    "menu-item#cropped": {
+        "props": {
+            "type": "category",
+            "highlight": true,
+            "blockClass": "menu-categoria-icone",
+            "itemProps": {
+                "categoryId": 100016,
+                "text": "CROPPED"
+            },
+            "iconProps": {
+                "id": "als-icon-cropped",
+                "size": 32,
+                "viewBox": "0 0 20 20",
+                "activeClassName": "rebel-pink",
+                "mutedClassName": "c-action-primary"
+            }
+        }
+    },
+    "menu-item#body": {
+        "props": {
+            "type": "category",
+            "highlight": true,
+            "blockClass": "menu-categoria-icone",
+            "itemProps": {
+                "categoryId": 100016,
+                "text": "BODY"
+            },
+            "iconProps": {
+                "id": "als-icon-body",
+                "size": 32,
+                "viewBox": "0 0 15 20",
+                "activeClassName": "rebel-pink",
+                "mutedClassName": "c-action-primary"
+            }
+        }
+    },
+    "menu-item#shorts": {
+        "props": {
+            "type": "category",
+            "highlight": true,
+            "blockClass": "menu-categoria-icone",
+            "itemProps": {
+                "categoryId": 100016,
+                "text": "SHORTS"
+            },
+            "iconProps": {
+                "id": "als-icon-shorts",
+                "size": 32,
+                "viewBox": "0 0 16 20",
+                "activeClassName": "rebel-pink",
+                "mutedClassName": "c-action-primary"
+            }
+        }
+    },
+    "menu-item#sais": {
+        "props": {
+            "type": "category",
+            "highlight": true,
+            "blockClass": "menu-categoria-icone",
+            "itemProps": {
+                "categoryId": 100016,
+                "text": "SAIAS"
+            },
+            "iconProps": {
+                "id": "als-icon-saias",
+                "size": 32,
+                "viewBox": "0 0 20 20",
+                "activeClassName": "rebel-pink",
+                "mutedClassName": "c-action-primary"
+            }
+        }
+    },
+    "menu-item#calcas": {
+        "props": {
+            "type": "category",
+            "highlight": true,
+            "blockClass": "menu-categoria-icone",
+            "itemProps": {
+                "categoryId": 100016,
+                "text": "CALÇAS"
+            },
+            "iconProps": {
+                "id": "als-icon-calcas",
+                "size": 32,
+                "viewBox": "0 0 11 16",
+                "activeClassName": "rebel-pink",
+                "mutedClassName": "c-action-primary"
+            }
+        }
+    },
+    "menu-item#blazer": {
+        "props": {
+            "type": "category",
+            "highlight": true,
+            "blockClass": "menu-categoria-icone",
+            "itemProps": {
+                "categoryId": 100016,
+                "text": "BLAZER"
+            },
+            "iconProps": {
+                "id": "als-icon-blazer",
+                "size": 32,
+                "viewBox": "0 0 20 20",
+                "activeClassName": "rebel-pink",
+                "mutedClassName": "c-action-primary"
+            }
+        }
+    },
+    "menu-item#conjunto": {
+        "props": {
+            "type": "category",
+            "highlight": true,
+            "blockClass": "menu-categoria-icone",
+            "itemProps": {
+                "categoryId": 100016,
+                "text": "CONJUNTO"
+            },
+            "iconProps": {
+                "id": "als-icon-camisas",
+                "size": 32,
+                "viewBox": "0 0 20 20",
+                "activeClassName": "rebel-pink",
+                "mutedClassName": "c-action-primary"
+            }
+        }
+    },
+    "menu-item#macacao": {
+        "props": {
+            "type": "category",
+            "highlight": true,
+            "blockClass": "menu-categoria-icone",
+            "itemProps": {
+                "categoryId": 100016,
+                "text": "MACACÃO"
+            },
+            "iconProps": {
+                "id": "als-icon-macacao",
+                "size": 32,
+                "viewBox": "0 0 11 20",
+                "activeClassName": "rebel-pink",
+                "mutedClassName": "c-action-primary"
+            }
+        }
+    },
+    "menu-item#moletom": {
+        "props": {
+            "type": "category",
+            "highlight": true,
+            "blockClass": "menu-categoria-icone",
+            "itemProps": {
+                "categoryId": 100016,
+                "text": "MOLETOM"
+            },
+            "iconProps": {
+                "id": "als-icon-camisas",
+                "size": 32,
+                "viewBox": "0 0 20 20",
+                "activeClassName": "rebel-pink",
+                "mutedClassName": "c-action-primary"
+            }
+        }
+    },
+    "menu-item#jaqueta": {
+        "props": {
+            "type": "category",
+            "highlight": true,
+            "blockClass": "menu-categoria-icone",
+            "itemProps": {
+                "categoryId": 100016,
+                "text": "JAQUETA"
+            },
+            "iconProps": {
+                "id": "als-icon-camisas",
+                "size": 32,
+                "viewBox": "0 0 20 20",
+                "activeClassName": "rebel-pink",
+                "mutedClassName": "c-action-primary"
+            }
+        }
+    },
+    "menu-item#casaco": {
+        "props": {
+            "type": "category",
+            "highlight": true,
+            "blockClass": "menu-categoria-icone",
+            "itemProps": {
+                "categoryId": 100016,
+                "text": "CASACO"
+            },
+            "iconProps": {
+                "id": "als-icon-camisas",
+                "size": 32,
+                "viewBox": "0 0 20 20",
+                "activeClassName": "rebel-pink",
+                "mutedClassName": "c-action-primary"
+            }
+        }
+    },
+    "menu-item#tricot": {
+        "props": {
+            "type": "category",
+            "highlight": true,
+            "blockClass": "menu-categoria-icone",
+            "itemProps": {
+                "categoryId": 100016,
+                "text": "TRICOT"
+            },
+            "iconProps": {
+                "id": "als-icon-camisas",
+                "size": 32,
+                "viewBox": "0 0 20 20",
+                "activeClassName": "rebel-pink",
+                "mutedClassName": "c-action-primary"
+            }
+        }
+    },
+    "menu-item#acessorios": {
+        "props": {
+            "type": "category",
+            "highlight": true,
+            "blockClass": "menu-categoria-icone",
+            "itemProps": {
+                "categoryId": 100016,
+                "text": "ACESSÓRIOS"
+            },
+            "iconProps": {
+                "id": "als-icon-camisas",
+                "size": 32,
+                "viewBox": "0 0 20 20",
                 "activeClassName": "rebel-pink",
                 "mutedClassName": "c-action-primary"
             }

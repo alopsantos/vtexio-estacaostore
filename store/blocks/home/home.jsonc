@@ -29,30 +29,24 @@
     "props": {
       "src": "https://estacaodamodastore.vteximg.com.br/arquivos/ids/193308/O-Presente-Perfeito-Estacao-Store-2020.jpg?v=637232383115000000",
       "link": "#",
-      "alt": "Estacao Store - 2020"
+      "alt": "Estacao Store - 2020",
+      "blockClass": "bannerhome"
     }
   },
   "image#banner3": {
     "props": {
       "src": "https://estacaodamodastore.vteximg.com.br/arquivos/ids/193309/Para-Alguem-Muito-Especial-Maes-Estacao-Store-2020.jpg?v=637232385596630000",
       "link": "#",
-      "alt": "Estacao Store - 2020"
+      "alt": "Estacao Store - 2020",
+      "blockClass": "bannerhome"
     }
   },
   "image#banner4": {
     "props": {
       "src": "https://estacaodamodastore.vteximg.com.br/arquivos/ids/193310/Dia-Das-Maes-Aline-Mezzari-Brand-2020.jpg?v=637232451557430000",
       "link": "#",
-      "alt": "Estacao Store - 2020"
-    }
-  },
-  "info-card#bannerhome": {
-    "props": {
-      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/utensilios-cozinha-min.png",
-      "isFullModeStyle": true,
-      "headline": "Time to rethink your kitchen",
-      "callToActionText": "Discover",
-      "textPosition": "center"
+      "alt": "Estacao Store - 2020",
+      "blockClass": "bannerhome"
     }
   },
   "flex-layout.row#social": {
