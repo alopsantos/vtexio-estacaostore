@@ -11,8 +11,8 @@
             "id": "menu-item-telefone",
             "type": "custom",
             "iconProps": {
-                "id": "als-telefone",
-                "size": 16,
+                "id": "als-icon-telefone",
+                "size": 24,
                 "viewBox": "0 0 18 18",
                 "activeClassName": "rebel-pink",
                 "mutedClassName": "c-action-primary"
@@ -34,12 +34,12 @@
             "type": "custom",
             "iconProps": {
                 "id": "mpa-heart",
-                "size": 16,
+                "size": 24,
                 "viewBox": "0 0 16 16",
                 "activeClassName": "rebel-pink",
                 "mutedClassName": "c-action-primary"
             },
-            "blockClass": "iconedesejos",
+            "blockClass": "menu-header-icone",
             "highlight": false,
             "itemProps": {
                 "type": "internal",
@@ -55,9 +55,10 @@
         "props": {
             "id": "menu-item-pedidos",
             "type": "custom",
+            "blockClass": "menu-header-icone",
             "iconProps": {
                 "id": "als-pedidos-location",
-                "size": 16,
+                "size": 24,
                 "viewBox": "0 0 16 16",
                 "activeClassName": "rebel-pink",
                 "mutedClassName": "c-action-primary"

@@ -189,12 +189,15 @@
       "fullWidth": true
     },
     "children": [
+      "flex-layout.col#spacer",
       "flex-layout.col#logo-desktop-full",
+      "flex-layout.col#spacer",
       "search-bar",
       "flex-layout.col#spacer",
       "vtex.menu@2.x:menu#cliente-menu",
       "login",
-      "minicart.v2"
+      "minicart.v2",
+      "flex-layout.col#spacer"
     ]
   },
   "flex-layout.col#logo-desktop-full": {
@@ -205,49 +208,61 @@
       "logo"
     ]
   },
-  "search-bar": {
+  "login": {
     "props": {
-      "DisplayMode": "search-and-clear-buttons",
-      "placeholder": "Busque por Blusa, Vestido, Shorts",
-      "maxWidth": "346",
-      "blockClass": "searchBarHeader"
+      "title": "Login",
+      "showIconProfile": true,
+      "iconProps": {
+        "id": "als-pedidos-location",
+        "size": 24,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "rebel-pink",
+        "mutedClassName": "c-action-primary"
+      }
     }
-  },
-  "rich-text#contato": {
-    "props": {
-      "text": "(45)3541-2940",
-      "textPosition": "",
-      "blockClass": "textLogo"
-    }
-  },
-  "rich-text#desejos": {
-    "props": {
-      "text": "Meus Desejos",
-      "textPosition": "",
-      "blockClass": "textLogo"
-    }
-  },
-  "rich-text#pedidos": {
-    "props": {
-      "text": "Pedidos",
-      "textPosition": "",
-      "blockClass": "textLogo"
-    }
-  },
-  "flex-layout.row#menu-full": {
-    "children": [
-      "vtex.menu@2.x:menu#categorias-menu"
-    ],
-    "props": {
-      "blockClass": "als-menu-full-header"
-    }
-    
-  },
-  "logo#novidades": {
-    "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "/public/vestido.svg"
+    },
+    "search-bar": {
+      "props": {
+        "DisplayMode": "search-and-clear-buttons",
+        "placeholder": "Busque por Blusa, Vestido, Shorts",
+        "maxWidth": "346",
+        "blockClass": "searchBarHeader"
+      }
+    },
+    "rich-text#contato": {
+      "props": {
+        "text": "(45)3541-2940",
+        "textPosition": "",
+        "blockClass": "textLogo"
+      }
+    },
+    "rich-text#desejos": {
+      "props": {
+        "text": "Meus Desejos",
+        "textPosition": "",
+        "blockClass": "textLogo"
+      }
+    },
+    "rich-text#pedidos": {
+      "props": {
+        "text": "Pedidos",
+        "textPosition": "",
+        "blockClass": "textLogo"
+      }
+    },
+    "flex-layout.row#menu-full": {
+      "children": [
+        "vtex.menu@2.x:menu#categorias-menu"
+      ],
+      "props": {
+        "blockClass": "als-menu-full-header"
+      }
+    },
+    "logo#novidades": {
+      "props": {
+        "title": "Logo",
+        "href": "/",
+        "url": "/public/vestido.svg"
+      }
     }
   }
-}

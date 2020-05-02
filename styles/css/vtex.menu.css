@@ -1,33 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap');
-
-.styledLinkContainer--menu-categoria-icone{
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+.styledLinkContainer--menu-categoria-icone {
     margin-left: 11px !important;
     margin-right: 11px !important;
 }
-.menuItem--menu-categoria-icone{
+
+.styledLinkContent--menu-header-icone {
+    font-family: 'Oswald';
+    font-size: 15px;
+}
+
+.menuItem--menu-categoria-icone {
     display: block;
     width: 5.26316%;
 }
-.menuItem--menu-categoria-icone:hover{
+
+.menuItem--menu-categoria-icone:hover {
     background-color: #f1eaee;
     transition: 0.2s all ease;
     color: green;
 }
-.styledLinkIcon--menu-categoria-icone{
+
+.styledLinkIcon--menu-categoria-icone {
     text-align: center;
     display: block;
 }
-.styledLinkIcon--menu-categoria-icone .rebel-pink{
+
+.styledLinkIcon--menu-categoria-icone .rebel-pink {
     color: green !important;
 }
-.styledLinkContent--menu-categoria-icone{
+
+.styledLinkContent--menu-categoria-icone {
     display: block !important;
-    font-size: 9px;
+    font-size: 15px;
     color: #ef1c8f;
     text-align: center;
-    font-family: 'Roboto';
-    font-weight: 300;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-style: normal;
 }
-.styledLinkIcon--menu-categoria-icone .activeClassName{
+
+.styledLinkIcon--menu-categoria-icone .activeClassName {
     display: block;
 }
