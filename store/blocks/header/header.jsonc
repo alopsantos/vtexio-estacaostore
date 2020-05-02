@@ -220,49 +220,49 @@
         "mutedClassName": "c-action-primary"
       }
     }
-    },
-    "search-bar": {
-      "props": {
-        "DisplayMode": "search-and-clear-buttons",
-        "placeholder": "Busque por Blusa, Vestido, Shorts",
-        "maxWidth": "346",
-        "blockClass": "searchBarHeader"
-      }
-    },
-    "rich-text#contato": {
-      "props": {
-        "text": "(45)3541-2940",
-        "textPosition": "",
-        "blockClass": "textLogo"
-      }
-    },
-    "rich-text#desejos": {
-      "props": {
-        "text": "Meus Desejos",
-        "textPosition": "",
-        "blockClass": "textLogo"
-      }
-    },
-    "rich-text#pedidos": {
-      "props": {
-        "text": "Pedidos",
-        "textPosition": "",
-        "blockClass": "textLogo"
-      }
-    },
-    "flex-layout.row#menu-full": {
-      "children": [
-        "vtex.menu@2.x:menu#categorias-menu"
-      ],
-      "props": {
-        "blockClass": "als-menu-full-header"
-      }
-    },
-    "logo#novidades": {
-      "props": {
-        "title": "Logo",
-        "href": "/",
-        "url": "/public/vestido.svg"
-      }
+  },
+  "search-bar": {
+    "props": {
+      "DisplayMode": "search-and-clear-buttons",
+      "placeholder": "Busque por Blusa, Vestido, Shorts",
+      "maxWidth": "346",
+      "blockClass": "searchBarHeader"
+    }
+  },
+  "rich-text#contato": {
+    "props": {
+      "text": "(45)3541-2940",
+      "textPosition": "",
+      "blockClass": "textLogo"
+    }
+  },
+  "rich-text#desejos": {
+    "props": {
+      "text": "Meus Desejos",
+      "textPosition": "",
+      "blockClass": "textLogo"
+    }
+  },
+  "rich-text#pedidos": {
+    "props": {
+      "text": "Pedidos",
+      "textPosition": "",
+      "blockClass": "textLogo"
+    }
+  },
+  "flex-layout.row#menu-full": {
+    "children": [
+      "vtex.menu@2.x:menu#categorias-menu"
+    ],
+    "props": {
+      "blockClass": "als-menu-full-header"
+    }
+  },
+  "logo#novidades": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "/public/vestido.svg"
     }
   }
+}
