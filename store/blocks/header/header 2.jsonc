@@ -20,32 +20,38 @@
       "blockClass": "sticky-header"
     },
     "children": [
+      "header-row#notification",
       "flex-layout.row#desktop",
       "flex-layout.row#menu"
     ]
   },
-  "flex-layout.row#desktop": {
-    "props": {
-      "horizontalAlign": "center",
-      "verticalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
-    },
+  "header-row#notification":{
     "children": [
+      "header-spacer",
+      "rich-text#header1",
+      "header-spacer",
+      "rich-text#header2",
+      "header-spacer",
+      "rich-text#header3",
+      "header-spacer",
+      "rich-text#header4",
+      "header-spacer"
+    ]
+  },
+  "flex-layout.row#desktop":{
+    "children":[
+      "flex-layout.col#spacer",
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
       "search-bar",
+      "flex-layout.col#spacer",
+      "vtex.menu@2.x:menu#cliente-menu",
       "login",
-      "minicart.v2"
+      "minicart.v2",
+      "flex-layout.col#spacer"
     ]
   },
-  "flex-layout.col#spacer": {
-    "props": {
-      "width": "grow"
-    }
-  },
-  "flex-layout.col#logo-desktop": {
+  "flex-layout.col#logo-desktop":{
     "props": {
       "verticalAlign": "middle"
     },
@@ -53,19 +59,22 @@
       "logo"
     ]
   },
+  "flex-layout.row#menu": {
+    "children": [
+      "vtex.menu@2.x:menu#categorias-menu-desktop"
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
   "logo": {
     "props": {
       "title": "Logo",
       "href": "/",
       "url": "https://www.estacaodamodastore.com.br/arquivos/logo.svg"
     }
-  },
-  "flex-layout.row#menu": {
-    "children": [
-      "logo#novidades",
-      "logo#promocoes",
-      "logo#vestidos"
-    ]
   },
   "logo#promocoes": {
     "props": {
@@ -110,7 +119,7 @@
   },
   "drawer": {
     "children": [
-      "logo#drawer"
+      "vtex.menu@2.x:menu#categorias-menu-desktop"
     ]
   },
   "logo#drawer": {
@@ -121,6 +130,9 @@
       "width": "280"
     }
   },
+
+
+  //menu desktop full
   "header-layout.desktop#full": {
     "children": [
       "sticky-layout#desktop-full"
@@ -149,7 +161,7 @@
       "header-spacer"
     ],
     "props": {
-      "blockClass": "notificacaoBar"
+      "blockClass": "notificacaoBarfull"
     }
   },
   "rich-text#header1": {
@@ -208,19 +220,6 @@
       "logo"
     ]
   },
-  "login": {
-    "props": {
-      "title": "Login",
-      "showIconProfile": true,
-      "iconProps": {
-        "id": "als-pedidos-location",
-        "size": 24,
-        "viewBox": "0 0 16 16",
-        "activeClassName": "rebel-pink",
-        "mutedClassName": "c-action-primary"
-      }
-    }
-  },
   "search-bar": {
     "props": {
       "DisplayMode": "search-and-clear-buttons",
@@ -252,11 +251,12 @@
   },
   "flex-layout.row#menu-full": {
     "children": [
-      "vtex.menu@2.x:menu#categorias-menu"
+      "vtex.menu@2.x:menu#categorias-menu-full"
     ],
     "props": {
       "blockClass": "als-menu-full-header"
     }
+    
   },
   "logo#novidades": {
     "props": {
