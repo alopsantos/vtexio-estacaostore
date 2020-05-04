@@ -15,9 +15,9 @@
 }
 
 .menuItem--menu-categoria-icone:hover {
-    background-color: #f1eaee;
-    transition: 0.2s all ease;
-    color: green;
+    border-top:2px solid #ef1c8f;
+    
+    padding-top: -2px;
 }
 
 .styledLinkIcon--menu-categoria-icone {

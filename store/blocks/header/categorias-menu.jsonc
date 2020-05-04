@@ -284,7 +284,7 @@
                 "text": "MOLETOM"
             },
             "iconProps": {
-                "id": "als-icon-camisas",
+                "id": "als-icon-moletom",
                 "size": 32,
                 "viewBox": "0 0 20 20",
                 "activeClassName": "rebel-pink",
@@ -302,7 +302,7 @@
                 "text": "JAQUETA"
             },
             "iconProps": {
-                "id": "als-icon-camisas",
+                "id": "als-icon-jaqueta",
                 "size": 32,
                 "viewBox": "0 0 20 20",
                 "activeClassName": "rebel-pink",
@@ -320,7 +320,7 @@
                 "text": "CASACO"
             },
             "iconProps": {
-                "id": "als-icon-camisas",
+                "id": "als-icon-casaco",
                 "size": 32,
                 "viewBox": "0 0 20 20",
                 "activeClassName": "rebel-pink",
