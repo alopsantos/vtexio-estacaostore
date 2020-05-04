@@ -1,5 +1,5 @@
 {
-    "vtex.menu@2.x:menu#categorias-menu-full": {
+    "vtex.menu@2.x:menu#categorias-menu": {
         "children": [
             "menu-item#novidades",
             "menu-item#promocoes",
