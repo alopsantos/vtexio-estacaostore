@@ -1,33 +1,49 @@
-.sellingPrice .sellingPriceValue{
+.sellingPrice .sellingPriceValue {
     font-weight: 300 !important;
     color: #ef1c8f !important;
 }
-.installmentsPrice{
+
+.installmentsPrice {
     font-size: 0.8rem;
 }
-.discountInsideContainer{
+
+.discountInsideContainer {
     width: 70px;
     height: 30px;
     border-radius: 0 0 0 10px;
     font-size: 18px;
     background-color: #ef1c8f;
 }
-.logoLink{
+
+.logoLink {
     width: 50px;
 }
+
 .searchBarContainer {
     min-width: 400px;
 }
-.searchIcon--searchBarHeader{
+
+.searchIcon--searchBarHeader {
     color: #ef1c8f;
 }
-.infoCardContainer--infocardHeader{
+
+.infoCardContainer--infocardHeader {
     align-items: center;
 }
-.imageElementLink--bannerhome{
+
+.imageElementLink--bannerhome {
     padding: 5px;
 }
-.imageElementLink--bannerhome:hover{
+
+.imageElementLink--bannerhome:hover {
     -webkit-filter: blur(1px);
     filter: blur(1px);
+}
+
+.autoCompleteOuterContainer--searchbarmobile {
+    width: 360px;
+}
+
+.autoCompleteOuterContainer--searchbarmobile .vtex-input-prefix__group {
+    border-radius: 20px !important;
 }

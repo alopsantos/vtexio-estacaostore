@@ -1,14 +1,9 @@
 {
   "header": {
-    "blocks": [
-      "header-layout.desktop",
-      "header-layout.mobile"
-    ]
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header.full": {
-    "blocks": [
-      "header-layout.desktop#full"
-    ]
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header-layout.desktop": {
     "children": [
@@ -19,10 +14,7 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": [
-      "flex-layout.row#desktop",
-      "flex-layout.row#menu"
-    ]
+    "children": ["flex-layout.row#desktop"]
   },
   "flex-layout.row#desktop": {
     "props": {
@@ -33,9 +25,11 @@
       "fullWidth": true
     },
     "children": [
+      "notification.bar#header-notification",
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
       "search-bar",
+      "locale-switcher",
       "login",
       "minicart.v2"
     ]
@@ -45,60 +39,45 @@
       "width": "grow"
     }
   },
+  "notification.bar#header-notification":{
+    "children":[
+      
+    ]
+  },
+  "rich-text#header-notification1": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "teste",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "help-message"
+    }
+  },
   "flex-layout.col#logo-desktop": {
     "props": {
       "verticalAlign": "middle"
     },
-    "children": [
-      "logo"
-    ]
+    "children": ["logo"]
   },
   "logo": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://www.estacaodamodastore.com.br/arquivos/logo.svg"
-    }
-  },
-  "flex-layout.row#menu": {
-    "children": [
-      "logo#novidades",
-      "logo#promocoes",
-      "logo#vestidos"
-    ]
-  },
-  "logo#promocoes": {
-    "props": {
-      "text": "Promocoes",
-      "title": "Logo",
-      "href": "/",
-      "url": "https://www.estacaodamodastore.com.br/arquivos/linkedin-icone.svg"
-    }
-  },
-  "logo#vestidos": {
-    "props": {
-      "showLabel": true,
-      "title": "Vestidos",
-      "href": "/",
-      "url": "https://www.estacaodamodastore.com.br/arquivos/linkedin-icone.svg"
+      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
+      "width": "80"
     }
   },
   "header-layout.mobile": {
-    "children": [
-      "sticky-layout#mobile"
-    ]
+    "children": ["sticky-layout#mobile"]
   },
   "sticky-layout#mobile": {
-    "children": [
-      "flex-layout.row#mobile"
-    ]
+    "children": ["flex-layout.row#mobile", "flex-layout.row#mobile-search"]
   },
   "flex-layout.row#mobile": {
     "children": [
       "drawer",
-      "logo",
-      "flex-layout.col#spacer",
-      "login",
+      "flex-layout.col#logo",
       "minicart.v2"
     ],
     "props": {
@@ -109,160 +88,29 @@
     }
   },
   "drawer": {
-    "children": [
-      "logo#drawer"
+    "children": []
+  },
+  "flex-layout.col#logo":{
+    "children":[
+      "logo#mobile"
     ]
   },
-  "logo#drawer": {
+  "logo#mobile": {
     "props": {
       "title": "Logo",
       "href": "/",
       "url": "https://www.estacaodamodastore.com.br/arquivos/logo.svg",
-      "width": "280"
+      "width": "205"
     }
   },
-  "header-layout.desktop#full": {
-    "children": [
-      "sticky-layout#desktop-full"
+  "flex-layout.row#mobile-search":{
+    "children":[
+      "search-bar#mobile"
     ]
   },
-  "sticky-layout#desktop-full": {
+  "search-bar#mobile":{
     "props": {
-      "blockClass": "sticky-header-full"
-    },
-    "children": [
-      "header-row#notification-full",
-      "flex-layout.row#desktop-full",
-      "flex-layout.row#menu-full"
-    ]
-  },
-  "header-row#notification-full": {
-    "children": [
-      "header-spacer",
-      "rich-text#header1",
-      "header-spacer",
-      "rich-text#header2",
-      "header-spacer",
-      "rich-text#header3",
-      "header-spacer",
-      "rich-text#header4",
-      "header-spacer"
-    ],
-    "props": {
-      "blockClass": "notificacaoBar"
-    }
-  },
-  "rich-text#header1": {
-    "props": {
-      "text": "Compras em ambiente 100% seguro",
-      "textPosition": "",
-      "blockClass": "notificacaoBarTexto"
-    }
-  },
-  "rich-text#header2": {
-    "props": {
-      "text": "Marque nosso instagram nas fotos do seu look!",
-      "textPosition": "",
-      "blockClass": "notificacaoBarTexto"
-    }
-  },
-  "rich-text#header3": {
-    "props": {
-      "text": "Entregamos para todo o território brasilleiro",
-      "textPosition": "",
-      "blockClass": "notificacaoBarTexto"
-    }
-  },
-  "rich-text#header4": {
-    "props": {
-      "text": "Tire suas dúvidas, fale conosco no chat",
-      "textPosition": "",
-      "blockClass": "notificacaoBarTexto"
-    }
-  },
-  "flex-layout.row#desktop-full": {
-    "props": {
-      "horizontalAlign": "center",
-      "verticalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
-    },
-    "children": [
-      "flex-layout.col#spacer",
-      "flex-layout.col#logo-desktop-full",
-      "flex-layout.col#spacer",
-      "search-bar",
-      "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#cliente-menu",
-      "login",
-      "minicart.v2",
-      "flex-layout.col#spacer"
-    ]
-  },
-  "flex-layout.col#logo-desktop-full": {
-    "props": {
-      "verticalAlign": "middle"
-    },
-    "children": [
-      "logo"
-    ]
-  },
-  "login": {
-    "props": {
-      "title": "Login",
-      "showIconProfile": true,
-      "iconProps": {
-        "id": "als-pedidos-location",
-        "size": 24,
-        "viewBox": "0 0 16 16",
-        "activeClassName": "rebel-pink",
-        "mutedClassName": "c-action-primary"
-      }
-    }
-  },
-  "search-bar": {
-    "props": {
-      "DisplayMode": "search-and-clear-buttons",
-      "placeholder": "Busque por Blusa, Vestido, Shorts",
-      "maxWidth": "346",
-      "blockClass": "searchBarHeader"
-    }
-  },
-  "rich-text#contato": {
-    "props": {
-      "text": "(45)3541-2940",
-      "textPosition": "",
-      "blockClass": "textLogo"
-    }
-  },
-  "rich-text#desejos": {
-    "props": {
-      "text": "Meus Desejos",
-      "textPosition": "",
-      "blockClass": "textLogo"
-    }
-  },
-  "rich-text#pedidos": {
-    "props": {
-      "text": "Pedidos",
-      "textPosition": "",
-      "blockClass": "textLogo"
-    }
-  },
-  "flex-layout.row#menu-full": {
-    "children": [
-      "vtex.menu@2.x:menu#categorias-menu"
-    ],
-    "props": {
-      "blockClass": "als-menu-full-header"
-    }
-  },
-  "logo#novidades": {
-    "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "/public/vestido.svg"
+      "blockClass": "searchbarmobile"
     }
   }
 }
