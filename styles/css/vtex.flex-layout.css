@@ -10,3 +10,12 @@
 .flexRow .main-header-mobile{
     background-color: white;
 }
+.flexRowContent--footer-mobile{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,85 @@
+{
+    "vtex.menu@2.x:menu#footermobile": {
+        "children": [
+            "menu-item#home",
+            "menu-item#desejosfooter",
+            "menu-item#pedidosfooter",
+            "menu-item#cadastro"
+        ],
+        "props":{
+            "blockClass": "footer-mobile-itens"
+        }
+    },
+    "menu-item#home": {
+        "props": {
+            "type": "category",
+            "highlight": true,
+            "blockClass": "menu-categoria-icone-footer",
+            "itemProps": {
+                "categoryId": 100016,
+                "text": "Home"
+            },
+            "iconProps": {
+                "id": "nav-home",
+                "size": 32,
+                "viewBox": "0 0 16 16",
+                "activeClassName": "rebel-pink",
+                "mutedClassName": "c-action-primary"
+            }
+        }
+    },
+    "menu-item#desejosfooter": {
+        "props": {
+            "type": "category",
+            "highlight": true,
+            "blockClass": "menu-categoria-icone-footer",
+            "itemProps": {
+                "categoryId": 100016,
+                "text": "Desejos"
+            },
+            "iconProps": {
+                "id": "mpa-heart",
+                "size": 32,
+                "viewBox": "0 0 16 16",
+                "activeClassName": "rebel-pink",
+                "mutedClassName": "c-action-primary"
+            }
+        }
+    },
+    "menu-item#pedidosfooter": {
+        "props": {
+            "type": "category",
+            "highlight": true,
+            "blockClass": "menu-categoria-icone-footer",
+            "itemProps": {
+                "categoryId": 100016,
+                "text": "Pedidos"
+            },
+            "iconProps": {
+                "id": "mpa-columns",
+                "size": 32,
+                "viewBox": "0 0 16 16",
+                "activeClassName": "rebel-pink",
+                "mutedClassName": "c-action-primary"
+            }
+        }
+    },
+    "menu-item#cadastro": {
+        "props": {
+            "type": "category",
+            "highlight": true,
+            "blockClass": "menu-categoria-icone-footer",
+            "itemProps": {
+                "categoryId": 100016,
+                "text": "Perfil"
+            },
+            "iconProps": {
+                "id": "hpa-profile",
+                "size": 32,
+                "viewBox": "0 0 16 16",
+                "activeClassName": "rebel-pink",
+                "mutedClassName": "c-action-primary"
+            }
+        }
+    }
+}

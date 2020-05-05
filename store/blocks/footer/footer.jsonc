@@ -51,17 +51,16 @@
   "footer-layout.mobile": { 
     "children": [
       "flex-layout.row#footer"
-    ]
+    ]    
   },
   "flex-layout.row#footer": { 
     "children": [
-      "image"
-    ]
-  },
-  "image": {
-    "props": {
-      "width": 100,
-      "src": "https://www.estacaodamodastore.com.br/arquivos/logo.svg"
+      "vtex.menu@2.x:menu#footermobile"
+    ],
+    "props":{
+      "blockClass": "footer-mobile",
+      "paddingTop": 0,
+      "paddingBottom": 7
     }
   }
 }
