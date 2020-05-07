@@ -1,12 +1,113 @@
 {
   "store.home": {
     "blocks": [
+      "flex-layout.row#categorias",
       "flex-layout.row",
       "shelf#novidades",
       "shelf#promocoes",
       "newsletter",
       "flex-layout.row#social"
     ]
+  },
+  "flex-layout.row#categorias": {
+    "children": [
+      "flex-layout.col#categoria",
+      "slider-layout#categorias"
+    ]
+  },
+  "flex-layout.col#categoria":{
+    "children":["rich-text#categorias"]
+  },
+  "rich-text#categorias": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "Categorias",
+      "blockClass": "help-message"
+    }
+  },
+  "slider-layout#categorias": {
+    "children": [
+      "info-card#categoriavestido",
+      "image#categoriavestido",
+      "image#categoriablusas",
+      "image#categoriatshirt",
+      "image#categoriacamisa",
+      "image#categoriashorts"
+    ],
+    "props": {
+      "fullWidth": true,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "never",
+      "itemsPerPage": {
+        "desktop": 10,
+        "tablet": 8,
+        "phone": 4
+      }
+    }
+  },
+  "info-card#categoriavestido":{
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+  "image#categoriavestido": {
+    "props": {
+      "src": "https://i3.wp.com/ae01.alicdn.com/kf/HTB1L1IneL1H3KVjSZFBq6zSMXXaM/Johnature-ver%C3%A3o-vestido-feminino-2020-novo-estilo-coreano-casual-solto-cor-s%C3%B3lida-sem-mangas-gola-quadrada.jpg",
+      "srcset": "https://i3.wp.com/ae01.alicdn.com/kf/HTB1L1IneL1H3KVjSZFBq6zSMXXaM/Johnature-ver%C3%A3o-vestido-feminino-2020-novo-estilo-coreano-casual-solto-cor-s%C3%B3lida-sem-mangas-gola-quadrada.jpg",
+      "link": "#",
+      "alt": "Estacao Store - 2020",
+      "blockClass": "categorias-home",
+      "maxWidth": 100
+    }
+  },
+  "image#categoriablusas": {
+    "props": {
+      "src": "https://capitollium.fbitsstatic.net/img/p/blusa-basica-quadrada-com-abertura-lateral-papaya-148503/269408.jpg?w=460&h=460&v=no-change",
+      "srcset": "https://capitollium.fbitsstatic.net/img/p/blusa-basica-quadrada-com-abertura-lateral-papaya-148503/269408.jpg?w=460&h=460&v=no-change",
+      "link": "#",
+      "alt": "Estacao Store - 2020",
+      "blockClass": "categorias-home",
+      "maxWidth": 100
+    }
+  },
+  "image#categoriatshirt": {
+    "props": {
+      "src": "https://capitollium.fbitsstatic.net/img/p/t-shirt-quadrada-com-dois-bolsos-off-white-148043/268085.jpg?w=460&h=460&v=no-change",
+      "srcset": "https://capitollium.fbitsstatic.net/img/p/t-shirt-quadrada-com-dois-bolsos-off-white-148043/268085.jpg?w=460&h=460&v=no-change",
+      "link": "#",
+      "alt": "Estacao Store - 2020",
+      "blockClass": "categorias-home",
+      "maxWidth": 100
+    }
+  },
+  "image#categoriacamisa": {
+    "props": {
+      "src": "https://img.freepik.com/fotos-gratis/piramide-quadrada-cor-de-rosa-no-fundo-cor-de-rosa-ideia-de-conceito-minimo_40193-79.jpg?size=338&ext=jpg",
+      "srcset": "https://img.freepik.com/fotos-gratis/piramide-quadrada-cor-de-rosa-no-fundo-cor-de-rosa-ideia-de-conceito-minimo_40193-79.jpg?size=338&ext=jpg",
+      "link": "#",
+      "alt": "Estacao Store - 2020",
+      "blockClass": "categorias-home",
+      "maxWidth": 100
+    }
+  },
+  "image#categoriashorts": {
+    "props": {
+      "src": "https://cdnv2.moovin.com.br/confidencialextra/imagens/produtos/det/cinto-feminino-medio-com-fivela-quadrada-plus-size-4757716c280985fedfeb79f22a267a27.jpg",
+      "srcset": "https://cdnv2.moovin.com.br/confidencialextra/imagens/produtos/det/cinto-feminino-medio-com-fivela-quadrada-plus-size-4757716c280985fedfeb79f22a267a27.jpg",
+      "link": "#",
+      "alt": "Estacao Store - 2020",
+      "blockClass": "categorias-home",
+      "maxWidth": 100
+    }
   },
   "flex-layout.row": {
     "children": [

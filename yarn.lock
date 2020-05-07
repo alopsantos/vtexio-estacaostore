@@ -456,6 +456,16 @@
     tar-fs "^2.0.0"
     xss "^1.0.6"
 
+"@vtex/toolbelt-message-renderer@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@vtex/toolbelt-message-renderer/-/toolbelt-message-renderer-0.0.1.tgz#0506c8aada71ccf19b419502eb787ef596d773d1"
+  integrity sha512-TPP7dAEVjEUKXEkeHlodzwnAAsJSjFEEVpsHt/TZuhvovSiChY1xi1rc/DwpXJkvaPbB4GpAQbIGlkrpCaBELg==
+  dependencies:
+    boxen "^4.2.0"
+    chalk "^3.0.0"
+    emojic "^1.1.15"
+    mustache "^4.0.1"
+
 "@wry/equality@^0.1.2", "@wry/equality@^0.1.9":
   version "0.1.11"
   resolved "https://registry.yarnpkg.com/@wry/equality/-/equality-0.1.11.tgz#35cb156e4a96695aa81a9ecc4d03787bc17f1790"
@@ -3955,7 +3965,7 @@ graphql@^0.13.2:
   dependencies:
     iterall "^1.2.1"
 
-graphql@^14.5.3:
+graphql@^14.2.1, graphql@^14.5.3:
   version "14.6.0"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-14.6.0.tgz#57822297111e874ea12f5cd4419616930cd83e49"
   integrity sha512-VKzfvHEKybTKjQVpTFrA5yUq2S9ihcZvfJAtsDBBCuV6wauPu1xl/f9ehgVf0FcEJJs4vz6ysb/ZMkGigQZseg==
@@ -5816,6 +5826,11 @@ ms@^2.0.0, ms@^2.1.1:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
+mustache@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/mustache/-/mustache-4.0.1.tgz#d99beb031701ad433338e7ea65e0489416c854a2"
+  integrity sha512-yL5VE97+OXn4+Er3THSmTdCFCtx5hHWzrolvH+JObZnUYwuaG7XV+Ch4fR2cIrcYI0tFHxS7iyFYl14bW8y2sA==
+
 mute-stream@0.0.5:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.5.tgz#8fbfabb0a98a253d3184331f9e8deb7372fac6c0"
@@ -7551,7 +7566,7 @@ static-extend@^0.1.1, static-extend@^0.1.2:
     define-property "^0.2.5"
     object-copy "^0.1.0"
 
-"stats-lite@github:vtex/node-stats-lite#dist":
+stats-lite@vtex/node-stats-lite#dist:
   version "2.2.0"
   resolved "https://codeload.github.com/vtex/node-stats-lite/tar.gz/1b0d39cc41ef7aaecfd541191f877887a2044797"
   dependencies:
@@ -8528,16 +8543,17 @@ vinyl@^2.0.1:
     remove-trailing-separator "^1.0.1"
     replace-ext "^1.0.0"
 
-vtex@^2.99.1:
-  version "2.99.1"
-  resolved "https://registry.yarnpkg.com/vtex/-/vtex-2.99.1.tgz#e99f16d1895186665c72061a020e3728f3908e3f"
-  integrity sha512-IstrGpK/ii+X2KtwIK0aLEWwZbd6u4nLpdlur33b0IbEhwBrPzRFSe+9i9VyU66Ol+oWquUJNJAYQ+uYvKP+kg==
+vtex@^2.99.3:
+  version "2.99.3"
+  resolved "https://registry.yarnpkg.com/vtex/-/vtex-2.99.3.tgz#c0c8e8ae70f56f696e75e4082a7c054c802513e9"
+  integrity sha512-76YNzl19jZBJmiiMMQLJ6cwef2UICv8tzomxmI6IuQV+okeF+eperL7IytiM1vjqZDcBpCKC3/ENBWv8Irif5A==
   dependencies:
     "@oclif/command" "^1.0.0"
     "@oclif/config" "^1.0.0"
     "@oclif/plugin-help" "^2.0.0"
     "@tiagonapoli/oclif-plugin-spaced-commands" "^0.0.5"
     "@vtex/api" "3.71.1"
+    "@vtex/toolbelt-message-renderer" "^0.0.1"
     "@yarnpkg/lockfile" "^1.1.0"
     ajv "~6.10.2"
     any-promise "^1.3.0"
@@ -8562,6 +8578,7 @@ vtex@^2.99.1:
     fs-extra "~7.0.0"
     get-stream "~4.0.0"
     globby "~8.0.1"
+    graphql "^14.2.1"
     ink "^2.7.1"
     is-docker "^2.0.0"
     is-wsl "^2.1.1"
